@@ -1,0 +1,77 @@
+👓 Automatic Glasses Detection using CNN
+
+This project focuses on detecting whether a person in an image is wearing glasses or not using Convolutional Neural Networks (CNNs).
+The model helps improve facial recognition and soft biometric systems by identifying the presence of glasses, even under varying light and facial conditions.
+
+🎯 Project Objective
+
+To build a CNN-based image classification model capable of distinguishing between two classes:
+
+With Glasses
+
+Without Glasses
+
+🧩 Project Overview
+
+Images from both classes were visualized to understand dataset structure and variation.
+Preprocessing and image augmentation techniques were applied to make the model robust against lighting, occlusions, and pose variations.
+
+⚙️ Model Architecture
+
+The CNN model includes the following layers:
+
+Convolution Layers: Extract key visual features from input images.
+
+Pooling Layers: Reduce image dimensions while retaining important features.
+
+Dropout Layers: Prevent overfitting during training.
+
+Dense Layers: Perform binary classification (with/without glasses).
+
+Activation Function: ReLU
+Optimizer: Adam
+Loss Function: Binary Cross-Entropy
+Evaluation Metric: Accuracy
+
+📈 Parameter Explanation
+
+Filters & Kernel Size: Define feature extraction detail; more filters capture finer details but increase computation.
+
+Stride & Padding: Control how filters move across the image, influencing output size.
+
+Dropout Rate: Randomly disables neurons to prevent overfitting.
+
+Learning Rate: Controls the speed of model weight updates.
+
+🌄 Image Augmentation Inference
+
+Image augmentation techniques such as rotation, zoom, flipping, and brightness adjustment were used to simulate real-world conditions.
+This increased dataset variability and improved model generalization.
+
+🔁 Epochs and Batch Size Inference
+
+Epochs: Increasing epochs improved model accuracy up to an optimal point (around 20–25), after which overfitting started.
+
+Batch Size: A batch size of 32 provided stable convergence and efficient training.
+
+🧪 Results
+
+Model Accuracy: ~90% on test data
+
+CNN successfully classified people with and without glasses in most cases.
+
+💡 Key Takeaways
+
+Learned the impact of CNN architecture and parameter tuning on model performance.
+
+Understood how data augmentation enhances generalization.
+
+Gained experience in applying deep learning techniques to image classification tasks.
+
+👨‍💻 Author
+
+Harish S
+📍 Bangalore
+📧 harishvishwa43@gmail.com
+
+🔗 LinkedIn
